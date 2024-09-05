@@ -1,0 +1,151 @@
+:root {
+  --color-primary: #8b6a55;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  background-color: aliceblue;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: var(--color-primary) solid 0.1rem;
+  border-bottom: var(--color-primary) solid 0.1rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-underline-offset: 0.2rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-primary);
+  transition: font-weight 0.3s ease-in-out;
+}
+
+nav a:hover {
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  width: 33.3333%;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+article:first-of-type {
+  padding-left: 0;
+}
+
+article:last-of-type {
+  padding-right: 0;
+}
+
+.logo {
+  max-width: 600px;
+}
+
+footer {
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
+article > h2 {
+  font-size: 1rem;
+}
+
+.hero {
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  height: 600px;
+  border-radius: 1rem;
+}
+
+.hero > h1 {
+  color: var(--color-primary);
+  margin-left: 5rem;
+  text-align: left;
+  text-shadow: aliceblue 1px 0 10px;
+}
+
+.hero {
+  text-align: right;
+}
+
+.hero > p {
+  display: inline-block;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  width: 25%;
+  margin-right: 2rem;
+  margin-top: 300px;
+  background-color: rgba(240, 248, 255, 0.8);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.img-card-holder {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.img-card {
+  width: 100%;
+  border-radius: 1rem;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-card:hover {
+  transform: scale(1.2);
+}
+
+.hero > p:first-child {
+  border-left: 0;
+  font-weight: bold;
+}
+
+footer {
+  border-top: var(--color-primary) solid 0.1rem;
+  padding-top: 1rem;
+}
+
+footer > div:nth-of-type(2) {
+  text-align: end;
+  font-style: italic;
+  font-size: 0.8rem;
+}
